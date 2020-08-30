@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Personal webpage</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color:beige;
+  padding: 15px;
+  text-align: center;
+  font-size: 35px;
+  color:brown;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 400px; /* only for demonstration, should be removed */
+  background:violet;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: whitesmoke;
+  height: 400px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color:burlywood;
+  padding: 10px;
+  text-align: center;
+  color: crimson;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>About myself</h2>
+</header>
+
+<section>
+  <nav>
+    <ul><h3>Hobbies</h3>
+      <li>Cooking</li>
+      <li>Drawing</li>
+      <li>Listening to music</li>
+    </ul>
+    <ul><h3>Achievements</h3>
+        <p>Won 2nd place in TCE-HBTU 36hrs Hackthon.The model proposed will reuse the grey water from homes for the flush systems. 
+         The water level detection and volume of freshwater used were monitored using ultrasonic and water flow sensors respectively.</p>
+      </ul>
+  </nav>
+  
+  <article>
+    <p>I , Prasitha S , pursuing B.Tech IT (2nd year) at Thiagarajar College of Engineering find more interest in extracting results from raw data which plays an important role in making decisions
+        by indentifying various facts and trends. A data analyst is both a thinker and a doer who doesn't hesitate to roll up their sleeves and dig into the numbers and I want to be one of them because I think these characteristics suit me well.
+        </p>
+        <ul><h3>Areas of interest</h3>
+            <li>Data analytics</li>
+            <li>Internet of things</li>
+            <li>Web development</li>
+          </ul>
+        <ul><h3>Technical Skills</h3>
+            <li>Programming Language :  C, Java, Python</li>
+            <li>Operating Systems    :   Windows, Linux</li>
+        </ul>
+        
+          
+          
+    
+  </article>
+</section>
+
+<footer>
+  <p>Click this link to navigate to my feedback form</p>
+  <a href="Feedback.html">Feedback form</a>
+</footer>
+
+</body>
+</html>

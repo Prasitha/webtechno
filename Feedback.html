@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<title>Feedback form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="text/css" href="StyleSheet.css" rel="stylesheet">
+<script type="text/javascript" src="script.js">
+    </script> 
+</head> 
+<body>   
+<fieldset>
+    This is a sample feedback form created by Prasitha S 18IT060 for feedback from students
+	regarding the online classes.
+</fieldset>
+<h3>Welcome <script>
+    document.write(user + "!");
+  </script></h3>
+<h2 class="word"> <center> TCE IT ONLINE CLASS FEEDBACK FORM - WEB TECHONOLOGY (18IT510) </center> </h2>
+<h3 class="word1"><center>Thank you for attending the online classes. Please help us to improve the experience by giving us your feedback.</center></h3>
+    <div class="wrapper">
+      <div class="form">
+        <h1 class="title"><center>Feedback Form</center></h1>
+          <form  class="myform" onsubmit="return validateForm()" name="myform"  METHOD="POST" action="result.html" required>
+            <fieldset>    
+             <legend>Details: </legend>    
+<label>     
+Name:     <input id="name" type="text" name="name" size="30" maxlength="100">    
+</label>    
+<br />
+<label>     
+Register no:     <input id="reg" type="text" name="reg" size="30" maxlength="100">    
+</label>    
+<br />    
+<label>
+Email:     <input id="email" type="text" name="email" size="30" maxlength="100">    
+</label>
+<br/>
+<label>     
+Phone number:     <input id="phone" type="text" name="phone" size="30" maxlength="100">    
+</label>
+<br /> 
+<label>
+    Gender:
+    </label>     
+    <br />     
+    <label>      
+    <input id="male" type="radio" name="gender" value="Male"/>      
+    Male     
+    </label>     
+    <label>      
+    <input id="female" type="radio" name="gender" value="Female" />      
+    Female     
+</label>   
+</fieldset>   
+<br />   
+<fieldset>    
+<legend>  Review:    </legend>    
+<p>     
+<label>      
+How woud you rate your online classes?     
+</label>     
+<select name="rate" id="rate">      
+<option value="very good">Very Good</option>      
+<option value="good">Good</option>      
+<option value="average">Average</option>      
+<option value="bad">Bad</option>
+</select>
+</p>
+<label>
+Did you understand the contents of the online classes?
+</label>     
+<br />     
+<label>      
+<input id="yes" type="radio" name="rating" value="Yes"/>      
+Yes     
+</label>     
+<label>      
+<input id="no" type="radio" name="rating" value="No" />      
+No     
+</label>     
+<label>      
+<input id="maybe" type="radio" name="rating" value="To a extent" />      
+To a extent     
+</label>    
+</p>    
+<p>     
+<label for="comments">      
+Any suggestions:     
+</label>     
+<br />     
+<textarea rows="4" cols="40" name="comments">     
+</textarea>   
+ </p>    
+ <input type="submit" value="Submit" onclick="myFunction()">
+ </fieldset>  
+</form>
+</div>
+</div>
+</body> 
+</html>
